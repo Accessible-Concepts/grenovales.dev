@@ -10,6 +10,9 @@ import compress from "astro-compress";
 import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
+import react from "@astrojs/react";
+
+// https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), compress(), sitemap()]
+  integrations: [tailwind(), compress(), sitemap(), react()]
 });
