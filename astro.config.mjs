@@ -10,6 +10,9 @@ import compress from "astro-compress";
 import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
+import alpinejs from "@astrojs/alpinejs";
+
+// https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), compress(), sitemap()]
+  integrations: [tailwind(), compress(), sitemap(), alpinejs()]
 });
