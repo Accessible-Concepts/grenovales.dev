@@ -1,5 +1,6 @@
 ---
 const { title } = Astro.props;
+const menuItems = ['Dashboard', 'Resume', 'Podcast']
 ---
 
 <html lang="en">
@@ -19,44 +20,13 @@ const { title } = Astro.props;
                     <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_header_and_indicator-svg1.svg" alt="logo">
                 </div>
                 <ul class="mt-12">
-                    <li class="flex w-full justify-between text-indigo-700 cursor-pointer items-center mb-6">
-                        <a href="javascript:void(0)" class="flex items-center">
-                            <span class="text-sm">Dashboard</span>
-                        </a>
-                        <div class="py-1 px-3 bg-indigo-700 rounded text-white flex items-center justify-center text-xs">5</div>
-                    </li>
-                    <li class="flex w-full justify-between text-gray-600 hover:text-indigo-700 cursor-pointer items-center mb-6">
-                        <a href="javascript:void(0)" class="flex items-center">
-                            <span class="text-sm">Products</span>
-                        </a>
-                        <div class="py-1 px-3 bg-indigo-700 rounded text-white flex items-center justify-center text-xs">8</div>
-                    </li>
-                    <li class="flex w-full justify-between text-gray-600 hover:text-indigo-700 cursor-pointer items-center mb-6">
-                        <a href="javascript:void(0)" class="flex items-center">
-                            <span class="text-sm">Performance</span>
-                        </a>
-                    </li>
-                    <li class="flex w-full justify-between text-gray-600 hover:text-indigo-700 cursor-pointer items-center mb-6">
-                        <a href="javascript:void(0)" class="flex items-center">
-                            <span class="text-sm">Deliverables</span>
-                        </a>
-                    </li>
-                    <li class="flex w-full justify-between text-gray-600 hover:text-indigo-700 cursor-pointer items-center mb-6">
-                        <a href="javascript:void(0)" class="flex items-center">
-                            <span class="text-sm">Invoices</span>
-                        </a>
-                        <div class="py-1 px-3 bg-indigo-700 rounded text-white flex items-center justify-center text-xs">25</div>
-                    </li>
-                    <li class="flex w-full justify-between text-gray-600 hover:text-indigo-700 cursor-pointer items-center mb-6">
-                        <a href="javascript:void(0)" class="flex items-center">
-                            <span class="text-sm">Inventory</span>
-                        </a>
-                    </li>
-                    <li class="flex w-full justify-between text-gray-600 hover:text-indigo-700 cursor-pointer items-center">
-                        <a href="javascript:void(0)" class="flex items-center">
-                            <span class="text-sm">Settings</span>
-                        </a>
-                    </li>
+                    {menuItems.map((menuItem) => (
+                        <li class="flex w-full justify-between text-indigo-700 cursor-pointer items-center mb-6">
+                            <a href="javascript:void(0)" class="flex items-center">
+                                <span class="text-sm">menuItem</span>
+                            </a>
+                        </li>
+                    )}
                 </ul>
             </div>
         </div>  
