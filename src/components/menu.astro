@@ -1,0 +1,15 @@
+---
+const menuItems = ['Dashboard', 'Resume', 'Podcast']
+---
+<ul class="mt-12">
+    {
+        menuItems.map((menuItem) => (
+                <li class="flex w-full justify-between text-gray-600 hover:text-indigo-700 cursor-pointer items-center mb-6">
+                    <a href="javascript:void(0)" class="flex items-center">
+                        <span class="text-sm">{menuItem}</span>
+                    </a>
+                </li>
+            )
+        )
+    }
+</ul>
