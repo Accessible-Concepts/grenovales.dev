@@ -1,17 +1,29 @@
 ---
 const { title } = Astro.props;
+import Header from '../components/header.astro'
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<title>{title}</title>
-	</head>
-	<body>
-        <slot />
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+  </head>
+  <body>
+	<div class="w-full h-full">
+		<div class="flex flex-no-wrap">
+			<div class="w-full">
+				<!-- Header Goes Here -->
+				<Header />
+				<!-- End of Header -->
+				<div class="container mx-auto py-10 h-64 md:w-4/5 w-11/12 px-6">
+					<div class="w-full h-full rounded border-dashed border-2 border-gray-300">
+						<slot />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  </body>
 </html>
-
-
