@@ -1,20 +1,17 @@
----
----
-
 <nav
-  class="h-16 flex items-center lg:items-stretch justify-end lg:justify-between bg-white shadow relative z-0"
+  class="h-16 flex items-center lg:items-stretch justify-end lg:justify-between bg-white shadow relative z-10"
 >
   <div class="hidden lg:flex w-full pr-6">
     <div class="w-1/2 h-full hidden lg:flex items-center pl-6 pr-24">
       <div class="relative w-full">
         <div class="text-gray-600 absolute ml-4 inset-0 m-auto w-4 h-4">
           <img
-            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_header_and_indicator-svg3.svg"
+            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_header_and_icons-svg3.svg"
             alt="Search"
           />
         </div>
         <input
-          class="border border-gray-100 focus:outline-none focus:border-indigo-700 rounded w-full text-sm text-gray-500 bg-gray-100 pl-12 py-2 placeholder-gray-600"
+          class="border border-gray-100 focus:outline-none focus:border-indigo-700 rounded w-full text-sm text-gray-600 placeholder-gray-600 bg-gray-100 pl-12 py-2"
           type="text"
           placeholder="Search"
         />
@@ -27,10 +24,10 @@
         >
           <button
             aria-label="open notifications"
-            class="relative cursor-pointer text-gray-600 focus:outline-none focus:ring-2 rounded focus:ring-gray-600"
+            class="relative cursor-pointer text-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-800"
           >
             <img
-              src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_header_and_indicator-svg5.svg"
+              src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_header_and_icons-svg5.svg"
               alt="notifications"
             />
             <div
@@ -43,11 +40,11 @@
           class="h-full w-20 flex items-center justify-center border-r mr-4 cursor-pointer text-gray-600"
         >
           <button
-            aria-label="Open chats"
-            class="focus:outline-none focus:ring-2 rounded focus:ring-gray-600"
+            aria-label="open chats"
+            class="focus:outline-none focus:ring-2 focus:ring-gray-800"
           >
             <img
-              src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_header_and_indicator-svg4.svg"
+              src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_header_and_icons-svg4.svg"
               alt="chats"
             />
           </button>
@@ -80,7 +77,7 @@
                     <circle cx="12" cy="7" r="4"></circle>
                     <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
                   </svg>
-                  <a href="havascript:void(0)" class="text-sm ml-2"
+                  <a href="javascript:void(0)" class="text-sm ml-2"
                     >My Profile</a
                   >
                 </div>
@@ -107,7 +104,7 @@
                     ></path>
                     <path d="M7 12h14l-3 -3m0 6l3 -3"></path>
                   </svg>
-                  <a href="havascript:void(0)" class="text-sm ml-2">Sign out</a>
+                  <a href="javascript:void(0)" class="text-sm ml-2">Sign out</a>
                 </div>
               </li>
             </ul>
@@ -126,13 +123,12 @@
           </div>
           <p class="text-gray-800 text-sm mx-3">Jane Doe</p>
           <button
-            aria-label="toggle profile options"
-            class="cursor-pointer text-gray-600 focus:outline-none focus:ring-2 rounded focus:ring-gray-600"
-            onclick="dropdownHandler(this)"
+            aria-label="open profile options"
+            class="cursor-pointer text-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-600"
           >
             <img
-              src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_header_and_indicator-svg6.svg"
-              alt=""
+              src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_header_and_icons-svg6.svg"
+              alt="down"
             />
           </button>
         </div>
@@ -140,13 +136,13 @@
     </div>
   </div>
   <button
-    aria-label="open sidebar Menu"
-    class="text-gray-600 mr-8 visible lg:hidden relative focus:outline-none focus:ring-2 rounded focus:ring-gray-600"
+    aria-label="Main Menu"
+    class="text-gray-600 mr-8 visible lg:hidden relative focus:outline-none focus:ring-2 focus:ring-gray-600"
     onclick="sidebarHandler(true)"
     id="menu"
   >
     <img
-      src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_header_and_indicator-svg7.svg"
+      src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_header_and_icons-svg7.svg"
       alt="toggler"
     />
   </button>
